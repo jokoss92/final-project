@@ -40,7 +40,7 @@ export default class Home extends Component {
 				</div>
 				<div className="container">
 					<div className="row text-center">
-						<div className="col-md-6 bg-success pt-4">
+						<div className="col-md-6 bg-success pt-4 pb-4">
 							<h4>Kegiatan</h4>
 							<p>Koding</p>
 							<p>Belajar Agama dan Al Qur'an</p>
@@ -57,13 +57,18 @@ export default class Home extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="container text-center">
-					<div className="row">
-						<div className="col-md-12 pt-4 text-center" />
-						<h3>Kontak</h3>
-						<p>" 082225111587 "</p>
+				<div className="container">
+					<div className="row text-center">
+						<div className="col-md-12 pt-4 pb-4">
+							<h3>Kontak</h3>
+							<p>082225111587</p>
+							<p>Titik Ruang Space,</p>
+							<p>Jl. Ngesrep Tim. III No.67, Sumurboto, Banyumanik,</p>
+							<p>Kota Semarang, Jawa Tengah 50269</p>
+						</div>
+						
 					</div>
-				</div>
+				</div>	
 			</div>
 		);
 	}
