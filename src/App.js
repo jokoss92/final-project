@@ -9,7 +9,7 @@ import Mondok from './counter/Mondok';
 
 class App extends Component {
   state ={
-    page: "Home"
+    page: "Kontak"
   }
 
   handleChangePage =(params)=>{
@@ -18,35 +18,17 @@ class App extends Component {
     })
   }
   render() {
-   if (this.state.page == "Home"){
-     return (
-       <div>
-     <Header ChangePage ={this.handleChangePage}/>
-     <Home/>
-     </div>)
-   }
-   if(this.state.page == "Kajian"){
-     return (
-     <div>
-       <Header ChangePage ={this.handleChangePage}/>
-     <Kajian/>
-     </div>)
-   }
-   if(this.state.page == "Kitab"){
-    return (
-    <div>
-      <Header ChangePage ={this.handleChangePage}/>
-      <Kitab/>
-    </div>)
-  }
-  if(this.state.page == "Mondok"){
-    return (
-    <div>
-      <Header ChangePage ={this.handleChangePage}/>
-    <Mondok/>
-    </div>)
-  }
+    return(
+      <div>
+        <Header ChangePage={this.handleChangePage} />
+        {this.state.page == "Home" ? (<Home/>) 
+        : this.state.page == "Kajian" ? (<Kajian/>)
+        : this.state.page == "Kitab" ? (<Kitab/>)
+        : this.state.page == "Mondok" ? (<Mondok/>)
+        : (<h1>Page is not Found</h1>)
+      }
+      </div>
+    )
 }
 }
-
 export default App;
