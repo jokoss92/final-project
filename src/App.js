@@ -6,7 +6,8 @@ import Home from './counter/Home';
 import Kajian from './counter/Kajian';
 import Kitab from './counter/Kitab';
 import Mondok from './counter/Mondok';
-import {Route} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
+import NotFound from './counter/NotFound';
 
 class App extends Component {
   state ={
@@ -22,10 +23,14 @@ class App extends Component {
     return(
       <div>
        <Header />
+       <Switch>
        <Route path="/" exact component={Home}/>
        <Route path="/kajian" component={Kajian}/>
        <Route path="/kitab" component={Kitab}/>
        <Route path="/mondok" component={Mondok}/>
+       <Route component={NotFound}/>
+       </Switch>
+       {/* <Redirect to='/' /> */}
       </div>
     )
 }
