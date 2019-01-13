@@ -6,6 +6,7 @@ import Home from './counter/Home';
 import Kajian from './counter/Kajian';
 import Kitab from './counter/Kitab';
 import Mondok from './counter/Mondok';
+import {Route} from 'react-router-dom';
 
 class App extends Component {
   state ={
@@ -20,13 +21,11 @@ class App extends Component {
   render() {
     return(
       <div>
-        <Header ChangePage={this.handleChangePage} />
-        {this.state.page == "Home" ? (<Home/>) 
-        : this.state.page == "Kajian" ? (<Kajian/>)
-        : this.state.page == "Kitab" ? (<Kitab/>)
-        : this.state.page == "Mondok" ? (<Mondok/>)
-        : (<h1>Page is not Found</h1>)
-      }
+       <Header />
+       <Route path="/" exact component={Home}/>
+       <Route path="/kajian" component={Kajian}/>
+       <Route path="/kitab" component={Kitab}/>
+       <Route path="/mondok" component={Mondok}/>
       </div>
     )
 }

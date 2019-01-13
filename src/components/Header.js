@@ -29,7 +29,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-        <NavbarBrand href="/"><img style={{width:30}}src={Logo}/></NavbarBrand>
+        <NavbarBrand onClick={()=> this.props.ChangePage("Home")}><img style={{width:30}}src={Logo}/></NavbarBrand>
           <NavbarBrand onClick={()=> this.props.ChangePage("Home")}>Santren Koding</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
