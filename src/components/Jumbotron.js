@@ -1,5 +1,6 @@
 import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
+import ModalExample from './Modal';
 
 const Example = (props) => {
   return (
@@ -8,7 +9,7 @@ const Example = (props) => {
         <h1 className="display-3" className="text-white">Santren Koding</h1>
         <p className="lead" className="text-white">Intensive Coding Bootcamp for Yatim & Dhuafa</p>
         <p className="lead">
-          <Button color="success" className="text-white">Mulai Belajar</Button>
+          <ModalExample></ModalExample>
         </p>
       </Jumbotron>
     </div>

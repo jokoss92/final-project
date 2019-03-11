@@ -11,6 +11,7 @@ import {
 } from 'reactstrap';
 import Logo from '../assets/logo.png';
 import {Link} from 'react-router-dom';
+import ModalExample from './Modal';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -53,7 +54,7 @@ export default class Example extends React.Component {
                 <NavLink>Kitab Koding</NavLink>
                 </Link>
               </NavItem>
-              <Button>Masuk / Daftar</Button>
+              <ModalExample />
             </Nav>
           </Collapse>
         </Navbar>

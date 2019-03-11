@@ -36,7 +36,7 @@ export default class Home extends Component {
 					</div>
 				</div>
 				<div className="text-center m-4">
-					<Button>Lihat Selengkapnya</Button>
+					{/* <Button>Lihat Selengkapnya</Button> */}
 				</div>
 				<div className="container">
 					<div className="row text-center">
