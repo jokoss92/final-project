@@ -6,8 +6,8 @@ const Example = (props) => {
   return (
     <div>
       <Jumbotron body className="text-center">
-        <h1 className="display-3" className="text-white">Santren Koding</h1>
-        <p className="lead" className="text-white">Intensive Coding Bootcamp for Yatim & Dhuafa</p>
+        <h1 className="display-3" className="text-black">Santren Koding</h1>
+        <p className="lead" className="text-black">Intensive Coding Bootcamp for Yatim & Dhuafa</p>
         <p className="lead">
           <ModalExample></ModalExample>
         </p>
